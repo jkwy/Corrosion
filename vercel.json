@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/proxy/:match*", "destination": "/service/:match*" },
+    { "source": "/uv/*", "destination": "/uv.html" },
+    { "source": "/:match*", "destination": "/" }
+  ]
+}

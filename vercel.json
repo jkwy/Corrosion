@@ -1,6 +1,6 @@
 {
-  "rewrites": [
-    { "source": "/proxy/:path*", "destination": "/service/:path*" },
-    { "source": "/:path*", "destination": "/" }
+  "routes": [
+    { "src": "/proxy/(.*)", "dest": "/service/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }

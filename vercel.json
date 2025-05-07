@@ -1,7 +1,6 @@
 {
   "rewrites": [
-    { "source": "/proxy/:match*", "destination": "/service/:match*" },
-    { "source": "/uv/*", "destination": "/uv.html" },
-    { "source": "/:match*", "destination": "/" }
+    { "source": "/proxy/:path*", "destination": "/service/:path*" },
+    { "source": "/:path*", "destination": "/" }
   ]
 }
